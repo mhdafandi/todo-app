@@ -12,6 +12,9 @@ background-color: black;
 /*vh = view height which means take all height of the remaining part of the page*/
 height: 100vh;
 }
+.bottom-section-light{background-color: white;}
+
+
 .row{display: flex;
 flex-direction: row;
 }
@@ -29,10 +32,38 @@ left: 32%;
 width: 37%;
 margin: 0 auto;
 height: 400px;
-border: solid 2px red;
 }
 
 .heading{
 color: white;
 letter-spacing: 5px;
+}
+.mode-icon:hover{cursor: pointer;}
+.light-banner{background-image: url(images/bg-desktop-light.jpg);}
+
+.todo-input{width: 80%;
+outline: none;
+
+padding: 25px 60px;
+
+background-color: hsl(235, 24%, 19%);
+
+border-top-style: hidden;
+border-left-style: hidden;
+border-right-style: hidden;
+border-bottom-style: hidden;
+font-style: "Josefin Sans", sans-serif;
+font-size: 20px ;
+color: white;
+
+}
+
+.circle{
+width: 20px;
+height: 20px;
+border-radius: 50px;
+border: 2px solid hsl(236, 9%, 61%);
+position: absolute;
+top: 6%;
+left: 4%;
 }
