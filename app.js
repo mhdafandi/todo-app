@@ -21,7 +21,37 @@ function changeMode() {
 todoInput.addEventListener("keypress", function (event) {
 
     if (event.key === "Enter") {
-        alert("Hello!")
+        let todoTaskValue = document.getElementById("todoInput").value;
+    currentTasks.push(todoTaskValue);
+    
+   
+    updateHTMLContent();
     }
 });
 
+function updateHTMLContent() {
+ let htmlDivContent = document.getElementById("todo-array-content");
+
+    htmlDivContent.innerHTML = "";
+
+ for (let i = 0; i < currentTasks.length; i++)
+
+    {
+
+    let taskWrapDiv = document.createElement("div");
+    taskWrapDiv.classList.add("task-wrap")
+    
+    let circleDiv = document.createElement("div");
+    circleDiv.classList.add("circle");
+    circleDiv.classList.add("circle-task");
+
+    let todoArrayTaskDiv = document.createElement("div");
+    todoArrayTaskDiv.classList.add("todo-array-task");
+    todoArrayTaskDiv.innerHTML = currentTasks[i];
+
+    taskWrapDiv.appendChild(circleDiv);
+    taskWrapDiv.appendChild(todoArrayTaskDiv);
+    htmlDivContent.appendChild(taskWrapDiv);
+
+    }
+}

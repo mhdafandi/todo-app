@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="style.css"> 
+
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Todo app</title>
 
 
 </head>
+
 <body>
 
-<main>
+  <main>
 
-<div class="banner" id="banner">
-<div class="heading-wrap row">
-<h1 class="heading"> TODO </h1>
-<img class="mode-icon" id="mode-icon" src="images/icon-sun.svg" onclick="changeMode();">
-</div>
-</div>
+    <div class="banner" id="banner">
+      <div class="heading-wrap row">
+        <h1 class="heading"> TODO </h1>
+        <img class="mode-icon" id="mode-icon" src="images/icon-sun.svg" onclick="changeMode();">
+      </div>
+    </div>
 
-<div class="main-content">
-<form>
-<div class="circle">  </div>
-<input class="todo-input" id="todoInput" type="text" placeholder="Create a new todo...">  
+    <div class="main-content">
+    
+        <div class="circle"> </div>
+        <input class="todo-input" id="todoInput" type="text" placeholder="Create a new todo...">
 
-<div class="current-tasks">  </div>
+        <div class="current-tasks"> </div>
 
-</form>
-</div>
+     
+    </div>
 
-<div class="bottom-section" id="bottom-section">
+    <div class="bottom-section" id="bottom-section">
+      
+      <div class="todo-task-items">
+
+      <div id="todo-array-content"></div>
+      
+      <!-- <div class="task-wrap">
+        <div class="circle circle-task">  </div>
+        <div class="todo-array-task"> Workout </div>
+      </div> -->
 
 
-</div>
+     
+        <div class="todo-controls row">
+          <div id="items-left"> 0 items left </div>
+        <div class="row">
+          <div> All </div>
+          <div> Active </div>
+          <div> Completed </div>
+        
+        </div>
+        <div class="clear"> Clear completed </div>
+        
+        </div>
+      </div>
 
-</main>
+    </div>
 
-<script src="app.js"></script>
+  </main>
+
+  <script src="app.js"></script>
 </body>
+
 </html>

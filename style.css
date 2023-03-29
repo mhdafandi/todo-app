@@ -26,7 +26,7 @@ margin: 0 auto;
 align-items: center;
 }
 .main-content{position: absolute;
-top: 17%;
+top: 20%;
 left: 32%;
 
 width: 37%;
@@ -66,4 +66,43 @@ border: 2px solid hsl(236, 9%, 61%);
 position: absolute;
 top: 6%;
 left: 4%;
+}
+.todo-task-items{
+position: absolute;
+top: 30%;
+left: 32%;
+width: 37.9%;
+}
+.todo-controls{background-color: hsl(235, 24%, 19%);
+padding: 10px;
+color: hsl(234, 11%, 52%);
+justify-content: space-between;
+}
+.task-states{
+width: 30%;
+display: flex;
+justify-content: space-between;
+}
+.task-states div:hover .clear:hover{
+color: white;
+cursor: pointer;
+}
+.task-wrap{position: relative;
+padding: 25px 60px;
+background-color: hsl(235, 24%, 19%);
+font-family: "Josefin Sans", sans-serif;
+color: white;
+border-bottom: 1px solid hsl(234, 11%, 52%);
+}
+
+.todo-array-task{}
+
+.todo-task-items{/*position: absolute;
+top: 28%;
+left: 32%;*/
+width: 37%;
+margin: 0 auto;
+}
+.circle-task{position: absolute;
+top: 30%;
 }
